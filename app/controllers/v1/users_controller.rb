@@ -8,8 +8,8 @@ module V1
       paginate json: User.all
     end
 
-    # GET /v1/users:id
-    # Get a specific location
+    # GET /v1/users/:id
+    # Get a specific user
     def show
       render json: @user
     end
@@ -40,10 +40,6 @@ module V1
     def destroy
       @user.destroy
       render json: { message: I18n.t('user.destroy') }
-    end
-
-    def check_authorized_resource
-      @assignments = Deliverable.find(params[:deliverable_id]).assignments
     end
 
     private

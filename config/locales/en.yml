@@ -24,5 +24,7 @@ en:
   user:
       unauthorized_resource: "Sorry, the requested resource does not exist or you are not authorized to perform this action."
       destroy: "User was successfully destroyed."
+  playlist:
+      destroy: "Playlist was successfully destroyed."
   exception:
     not_found: "We couldn't find that resource."

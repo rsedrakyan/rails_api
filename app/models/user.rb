@@ -4,6 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :playlists, dependent: :destroy
+
+
   enum user_type: Constants::USER_TYPE
 
   alias_attribute :user_id, :id

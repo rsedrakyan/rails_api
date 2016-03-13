@@ -56,7 +56,7 @@ describe V1::UsersController do
 
   context 'PATCH update' do
     subject do
-      post :update, id: @user.id, user: { email: 'another_email@email.com', user_type: 0 }
+      patch :update, id: @user.id, user: { email: 'another_email@email.com', user_type: 0 }
     end
 
     it 'updates user' do
@@ -87,7 +87,7 @@ describe V1::UsersController do
       delete :destroy, id: @guest_user.id
     end
 
-    it 'should not delete user' do
+    it 'deletes the user' do
       expect{subject}.to change{User.count}.by(-1)
     end
   end
