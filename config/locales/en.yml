@@ -20,4 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  welcome: "<h1>Welcome to our API</h1>"
+  user:
+      unauthorized_resource: "Sorry, the requested resource does not exist or you are not authorized to perform this action."
+      destroy: "User was successfully destroyed."
+  exception:
+    not_found: "We couldn't find that resource."

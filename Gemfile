@@ -10,6 +10,8 @@ gem 'active_model_serializers'
 
 # Project-specific gems
 gem 'devise', github: 'plataformatec/devise'
+gem 'kaminari'
+gem 'api-pagination'
 
 
 group :development, :test do
