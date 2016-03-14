@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
 
   has_many :playlists, dependent: :destroy
+  has_many :subscriptions, dependent: :destroy
 
 
   enum user_type: Constants::USER_TYPE

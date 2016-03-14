@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   namespace :v1, defaults: { format: :json } do
     resources :users, only: [:index, :show, :create, :update, :destroy] do
       resources :playlists, only: [:index, :show, :create, :update, :destroy]
+      resources :subscriptions, only: [:index, :show, :create, :destroy]
     end
 
     resources :playlists, only: [] do

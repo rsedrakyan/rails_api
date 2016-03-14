@@ -20,13 +20,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  welcome: "<h1>Welcome to our API</h1>"
-  user:
-      unauthorized_resource: "Sorry, the requested resource does not exist or you are not authorized to perform this action."
-      destroy: "User was successfully destroyed."
-  playlist:
-      destroy: "Playlist was successfully destroyed."
-  track:
-      destroy: "Track was successfully destroyed."
   exception:
     not_found: "We couldn't find that resource."
+  playlist:
+    destroy: "Playlist was successfully destroyed."
+  subscription:
+    already_subscribed: "You are already subscribed to this playlist"
+    destroy: "Subscription was successfully destroyed."
+    self_subscribe: "Can't subscribe to your own playlist"
+  track:
+    destroy: "Track was successfully destroyed."
+  user:
+    destroy: "User was successfully destroyed."
+    unauthorized_resource: "Sorry, the requested resource does not exist or you are not authorized to perform this action."
+  welcome: "<h1>Welcome to our API</h1>"
