@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   private
 
   def authorize_user
-    unless UserAuthorizationPolicy.new(current_user, controller_name, action_name, params[:id]).authorized?
+    unless UserAuthorizationPolicy.new(current_user, controller_name, action_name, params).authorized?
       render json: { error: t('user.unauthorized_resource') }, status: :unprocessable_entity
     end
   end
