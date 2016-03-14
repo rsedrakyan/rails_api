@@ -11,4 +11,8 @@ describe Playlist do
     expect(Playlist.new(name: 'Playlist 1', user: @user2)).to be_valid
   end
 
+  it 'validates presence of name' do
+    expect(Playlist.new(name: '', user: @user1)).to_not be_valid
+  end
+
 end

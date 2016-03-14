@@ -26,5 +26,7 @@ en:
       destroy: "User was successfully destroyed."
   playlist:
       destroy: "Playlist was successfully destroyed."
+  track:
+      destroy: "Track was successfully destroyed."
   exception:
     not_found: "We couldn't find that resource."
